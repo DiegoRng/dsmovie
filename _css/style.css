@@ -5,6 +5,8 @@
   --text-gray: #4a4a4a;
   --color-primary: #4d41c0;
   --white: #fff;
+  --light-gray: #aaa;
+  --star-yellow: #ffbb3A;
 }
 
 * {
@@ -67,13 +69,33 @@ nav a {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  min-height: 150px;
+  min-height: 220px;
 }
 .dsmovie-card-description h3 {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 25px;
   text-align: center;
+}
+.dsmovie-card-description-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dsmovie-card-description-bottom h4{
+    font-size: 16px;
+    font-weight: 700;
+    color:var(--star-yellow)
+}
+.dsmovie-card-description-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--light-gray);
+    margin-bottom: 10px;
+
+}
+.dsmovie-card-description-bottom img{
+    width: 22px;
 }
 .dsmovie-btn,
 .dsmovie-btn:hover {
@@ -87,9 +109,40 @@ nav a {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  border: 0;
 }
-
 .dsmovie-form-container {
   padding: 40px 0;
   max-width: 480px;
+}
+.dsmovie-form-description{
+    background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+.dsmovie-form{
+    width: 100%;
+}
+.dsmovie-form-description h3{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.dsmovie-form-group{
+    margin-bottom: 20px;
+}
+.dsmovie-form-group label{
+    font-size: 12px;
+    color: var(--light-gray);
+
+}
+.dsmovie-form-btn-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
